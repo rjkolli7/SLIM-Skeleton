@@ -1,0 +1,22 @@
+{
+  "name": "datahub.at/AndroidIM-API",
+  "description": "description_text",
+  "minimum-stability": "stable",
+  "license": "proprietary",
+  "authors": [
+    {
+      "name": "author's name",
+      "email": "email@example.com"
+    }
+  ],
+  "require": {
+    "slim/slim": "3.5.0",
+    "slim/twig-view": "2.1.1"
+  },
+
+  "autoload":{
+    "psr-4":{
+      "AndroidIM\\":"app"
+    }
+  }
+}
