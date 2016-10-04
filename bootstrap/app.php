@@ -1,5 +1,7 @@
 <?php
 
+session_start();
+
 require __DIR__ . '/../vendor/autoload.php';
 
 
@@ -27,6 +29,10 @@ $container['view'] = function ($container){
     return $view;
 };
 
+$container['HomeController'] = function ($container){
 
+    return new \AndroidIM\Controllers\HomeController($container);
+
+};
 
 require __DIR__ .'/../app/routes.php';
