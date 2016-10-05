@@ -1,10 +1,4 @@
 <?php
-/**
- * Controller.php created by
- * User: Dominik Pirngruber
- * Date: 04.10.2016
- * Time: 20:37
- */
 
 namespace AndroidIM\Controllers;
 

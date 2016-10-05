@@ -1,5 +1,7 @@
 <?php
 
+use Respect\Validation\Validator as v;
+
 session_start();
 
 require __DIR__ . '/../vendor/autoload.php';
@@ -53,6 +55,10 @@ $container['view'] = function ($container){
     return $view;
 };
 
+$container['validator'] = function ($container){
+    return new AndroidIM\Validation\Validator;
+};
+
 $container['HomeController'] = function ($container){
     return new \AndroidIM\Controllers\HomeController($container);
 };
@@ -60,6 +66,13 @@ $container['HomeController'] = function ($container){
 $container['AuthController'] = function ($container){
     return new \AndroidIM\Controllers\Auth\AuthController($container);
 };
+
+$app->add(new \AndroidIM\Middleware\ValidationErrorsMiddleware($container));
+$app->add(new \AndroidIM\Middleware\OldInputMiddleware($container));
+
+
+v::with('AndroidIM\\Validation\\Rules\\');
+
 
 
 require __DIR__ .'/../app/routes.php';

@@ -14,6 +14,7 @@
       <excludeFolder url="file://$MODULE_DIR$/vendor/paragonie/random_compat" />
       <excludeFolder url="file://$MODULE_DIR$/vendor/pimple/pimple" />
       <excludeFolder url="file://$MODULE_DIR$/vendor/psr/http-message" />
+      <excludeFolder url="file://$MODULE_DIR$/vendor/respect/validation" />
       <excludeFolder url="file://$MODULE_DIR$/vendor/slim/slim" />
       <excludeFolder url="file://$MODULE_DIR$/vendor/slim/twig-view" />
       <excludeFolder url="file://$MODULE_DIR$/vendor/symfony/polyfill-mbstring" />
@@ -37,6 +38,7 @@
           <root url="file://$MODULE_DIR$/vendor/paragonie/random_compat" />
           <root url="file://$MODULE_DIR$/vendor/pimple/pimple" />
           <root url="file://$MODULE_DIR$/vendor/psr/http-message" />
+          <root url="file://$MODULE_DIR$/vendor/respect/validation" />
           <root url="file://$MODULE_DIR$/vendor/slim/slim" />
           <root url="file://$MODULE_DIR$/vendor/slim/twig-view" />
           <root url="file://$MODULE_DIR$/vendor/symfony/polyfill-mbstring" />
@@ -56,6 +58,7 @@
           <root url="file://$MODULE_DIR$/vendor/paragonie/random_compat" />
           <root url="file://$MODULE_DIR$/vendor/pimple/pimple" />
           <root url="file://$MODULE_DIR$/vendor/psr/http-message" />
+          <root url="file://$MODULE_DIR$/vendor/respect/validation" />
           <root url="file://$MODULE_DIR$/vendor/slim/slim" />
           <root url="file://$MODULE_DIR$/vendor/slim/twig-view" />
           <root url="file://$MODULE_DIR$/vendor/symfony/polyfill-mbstring" />
