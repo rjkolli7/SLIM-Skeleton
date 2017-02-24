@@ -1,6 +1,6 @@
 <?php
 
-namespace AndroidIM\Controllers;
+namespace App\Controllers;
 
 class Controller
 {

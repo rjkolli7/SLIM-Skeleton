@@ -1,7 +1,7 @@
 <?php
 
 
-namespace AndroidIM\Middleware;
+namespace App\Middleware;
 
 class Middleware{
 

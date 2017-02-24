@@ -1,7 +1,7 @@
 <?php
 
-use AndroidIM\Middleware\AuthMiddleware;
-use AndroidIM\Middleware\GuestMiddleware;
+use App\Middleware\AuthMiddleware;
+use App\Middleware\GuestMiddleware;
 
 $app->get('/','HomeController:index')->setName('home');
 

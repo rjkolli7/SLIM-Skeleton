@@ -1,9 +1,8 @@
 <?php
 
-namespace AndroidIM\Controllers\Auth;
+namespace App\Controllers\Auth;
 
-use AndroidIM\Models\User;
-use AndroidIM\Controllers\Controller;
+use App\Controllers\Controller;
 use Respect\Validation\Validator as v;
 
 

@@ -1,8 +1,8 @@
 <?php
 
-namespace AndroidIM\Validation\Rules;
+namespace App\Validation\Rules;
 
-use AndroidIM\Models\User;
+use App\Models\User;
 use Respect\Validation\Rules\AbstractRule;
 
 class EmailAvailable extends AbstractRule{

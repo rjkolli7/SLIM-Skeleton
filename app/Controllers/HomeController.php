@@ -1,9 +1,6 @@
 <?php
 
-namespace AndroidIM\Controllers;
-
-use AndroidIM\Models\User;
-use Slim\Views\Twig as View;
+namespace App\Controllers;
 
 class HomeController extends Controller
 {

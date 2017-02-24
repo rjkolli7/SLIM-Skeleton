@@ -1,8 +1,7 @@
 <?php
 
-namespace AndroidIM\Validation\Rules;
+namespace App\Validation\Rules;
 
-use AndroidIM\Models\User;
 use Respect\Validation\Rules\AbstractRule;
 
 class MatchesPassword extends AbstractRule{

@@ -1,6 +1,6 @@
 <?php
 
-namespace AndroidIM\Validation\Exceptions;
+namespace App\Validation\Exceptions;
 
 use Respect\Validation\Exceptions\ValidationException;
 

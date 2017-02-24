@@ -1,8 +1,8 @@
 <?php
 
-namespace AndroidIM\Auth;
+namespace App\Auth;
 
-use AndroidIM\Models\User;
+use App\Models\User;
 
 class Auth{
 
@@ -10,6 +10,7 @@ class Auth{
         if (isset($_SESSION['user'])) {
             return User::find($_SESSION['user']);
         }
+        return false;
     }
 
     public function check(){

@@ -13,10 +13,10 @@ $app = new \Slim\App([
         'displayErrorDetails' => true,
         'db' =>[
             'driver' => 'mysql',
-            'host'  =>  'api.datahub.at',
-            'database'  => 'androidIM',
-            'username' => 'androidIM',
-            'password'  =>  'gAa&01s0',
+            'host'  =>  'LOCALHOST',
+            'database'  => 'DBNAME',
+            'username' => 'DBUSER',
+            'password'  =>  'DBPASSWORD',
             'charset'   =>  'utf8',
             'collation' =>  'utf8_unicode_ci',
             'prefix'    =>  '',
@@ -40,7 +40,7 @@ $container['db'] = function ($container) use ($capsule){
 };
 
 $container['auth'] = function ($container){
-    return new \AndroidIM\Auth\Auth;
+    return new \App\Auth\Auth;
 };
 
 $container['flash'] = function ($container){
@@ -70,19 +70,19 @@ $container['view'] = function ($container){
 };
 
 $container['validator'] = function ($container){
-    return new AndroidIM\Validation\Validator;
+    return new App\Validation\Validator;
 };
 
 $container['HomeController'] = function ($container){
-    return new \AndroidIM\Controllers\HomeController($container);
+    return new \App\Controllers\HomeController($container);
 };
 
 $container['AuthController'] = function ($container){
-    return new \AndroidIM\Controllers\Auth\AuthController($container);
+    return new \App\Controllers\Auth\AuthController($container);
 };
 
 $container['PasswordController'] = function ($container){
-    return new \AndroidIM\Controllers\Auth\PasswordController($container);
+    return new \App\Controllers\Auth\PasswordController($container);
 };
 
 $container['csrf'] = function ($container){
@@ -91,12 +91,12 @@ $container['csrf'] = function ($container){
 
 
 
-$app->add(new \AndroidIM\Middleware\ValidationErrorsMiddleware($container));
-$app->add(new \AndroidIM\Middleware\OldInputMiddleware($container));
-$app->add(new \AndroidIM\Middleware\CsrfViewMiddleware($container));
+$app->add(new \App\Middleware\ValidationErrorsMiddleware($container));
+$app->add(new \App\Middleware\OldInputMiddleware($container));
+$app->add(new \App\Middleware\CsrfViewMiddleware($container));
 $app->add($container->csrf);
 
-v::with('AndroidIM\\Validation\\Rules\\');
+v::with('App\\Validation\\Rules\\');
 
 
 

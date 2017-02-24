@@ -1,6 +1,6 @@
 <?php
 
-namespace AndroidIM\Middleware;
+namespace App\Middleware;
 
 class ValidationErrorsMiddleware extends Middleware {
 

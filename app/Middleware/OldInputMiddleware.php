@@ -1,6 +1,6 @@
 <?php
 
-namespace AndroidIM\Middleware;
+namespace App\Middleware;
 
 class OldInputMiddleware extends Middleware {
 

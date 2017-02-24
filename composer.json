@@ -1,12 +1,12 @@
 {
-  "name": "datahub.at/AndroidIM-API",
+  "name": "v-city.at/Slim-Skel",
   "description": "description_text",
   "minimum-stability": "stable",
   "license": "proprietary",
   "authors": [
     {
-      "name": "author's name",
-      "email": "email@example.com"
+      "name": "Dominik Pirngruber",
+      "email": "d.pirngruber@gmail.com"
     }
   ],
   "require": {
@@ -20,7 +20,7 @@
 
   "autoload":{
     "psr-4":{
-      "AndroidIM\\":"app"
+      "App\\":"app"
     }
   }
 }
